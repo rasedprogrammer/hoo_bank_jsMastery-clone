@@ -1,11 +1,43 @@
-import React from "react";
+import styles from "./style";
 
-const App = () => {
-  return (
-    <div>
-      <h1>App</h1>
+import {
+  Navbar,
+  Hero,
+  Stats,
+  Billing,
+  CardDeal,
+  Testimonials,
+  Clients,
+  CTA,
+  Footer,
+} from "./components";
+
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navber />
+      </div>
     </div>
-  );
-};
+    {/* Hero Section */}
+    <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
+      </div>
+    </div>
+    {/* Stats Section */}
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Stats />
+        <Billing />
+        <CardDeal />
+        <Testimonials />
+        <Clients />
+        <CTA />
+        <Footer />
+      </div>
+    </div>
+  </div>
+);
 
 export default App;
