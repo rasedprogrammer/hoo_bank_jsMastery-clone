@@ -7,7 +7,7 @@ import {
   Billing,
   CardDeal,
   Testimonials,
-  Clients,
+  Client,
   CTA,
   Footer,
 } from "./components";
@@ -16,7 +16,7 @@ const App = () => (
   <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Navber />
+        <Navbar />
       </div>
     </div>
     {/* Hero Section */}
@@ -32,7 +32,7 @@ const App = () => (
         <Billing />
         <CardDeal />
         <Testimonials />
-        <Clients />
+        <Client />
         <CTA />
         <Footer />
       </div>
